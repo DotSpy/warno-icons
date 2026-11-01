@@ -40,6 +40,20 @@
         "A ban division 30", "B ban division 30", "A ban division 30", "B ban division 30", "A ban division 30", "B ban division 30", "A ban division 30", "B ban division 30", "A ban division 30", "B ban division 30",
         "A pick division 45", "B pick division 45", "A pick division 45", "B pick division 45", "A pick division 45", "B pick division 45", "A pick division 45", "B pick division 45", "A pick division 45", "B pick division 45"
       ]
+    },
+    {
+      "id": "open-exclusive", "name": "2v2 Open pool - exclusive (one by one)", "teamSize": 2, "pool": "2v2", "divisionPick": "exclusive",
+      "steps": [
+        "A ban map 30", "B ban map 30", "A ban map 30", "B ban map 30", "A pick map 30",
+        "A pick division 45", "B pick division 45", "B pick division 45", "A pick division 45"
+      ]
+    },
+    {
+      "id": "open-shared", "name": "2v2 Open pool - shared (blind-style)", "teamSize": 2, "pool": "2v2", "divisionPick": "shared",
+      "steps": [
+        "A ban map 30", "B ban map 30", "A ban map 30", "B ban map 30", "A pick map 30",
+        "A pick division 45", "A pick division 45", "B pick division 45", "B pick division 45"
+      ]
     }
   ]
 }

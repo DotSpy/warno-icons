@@ -39,7 +39,8 @@
     { "id": "nato-us-82nd-us", "name": "82nd Airborne Division", "side": "nato", "nation": "US", "icon": "divisions/nato/us/82nd us.png" },
     { "id": "nato-us-101us", "name": "101st Airborne Division", "side": "nato", "nation": "US", "icon": "divisions/nato/us/101us.png" },
     { "id": "nato-us-marines", "name": "2nd Marine Division", "side": "nato", "nation": "US", "icon": "divisions/nato/us/marines.png" },
-
+        { "id": "nato-us-4th-marine", "name": "4th Marine Division", "side": "nato", "nation": "US", "icon": "divisions/nato/us/4th-marines.png" },
+        { "id": "pact-cub-1-tank", "name": "1a División de Tanques", "side": "pact", "nation": "CUB", "icon": "divisions/pact/cub/1-tank.png" },
     { "id": "pact-cz-1cz", "name": "1. Tanková Divize", "side": "pact", "nation": "CZ", "icon": "divisions/pact/cz/1cz.png" },
     { "id": "pact-cz-2cz", "name": "2. Motostřelecká Divize", "side": "pact", "nation": "CZ", "icon": "divisions/pact/cz/2cz.png" },
     { "id": "pact-cz-19cz", "name": "19. Motostřelecká Divize", "side": "pact", "nation": "CZ", "icon": "divisions/pact/cz/19cz.png" },

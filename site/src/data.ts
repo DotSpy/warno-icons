@@ -22,6 +22,7 @@ export interface Preset {
   pool?: string;
   mapIds?: string[];
   divisionIds?: string[];
+  divisionPick?: 'shared' | 'exclusive';
   steps: string[];
 }
 
@@ -70,6 +71,7 @@ export function presetToConfig(p: Preset, roomName: string): Config {
     teamSize: p.teamSize,
     mapIds: p.mapIds ?? pools[p.pool ?? ''] ?? [],
     divisionIds: p.divisionIds ?? divisions.map((d) => d.id),
+    divisionPick: p.divisionPick === 'exclusive' ? 'exclusive' : 'shared',
     steps: p.steps.map(parseStep),
   };
 }
@@ -85,7 +87,6 @@ export function validatePreset(p: Preset): string[] {
   const c = presetToConfig(p, '');
   if (!c.steps.length) problems.push('Preset has no steps.');
   const mapSteps = steps.filter((s) => s.target === 'map').length;
-  if (steps.some((s) => s.target === 'division') && !steps.some((s) => s.target === 'side')) problems.push('Warning: division steps but no "pick side" step - divisions cannot be drafted until sides are known.');
   if (mapSteps > c.mapIds.length) problems.push(`More map steps (${mapSteps}) than maps in pool (${c.mapIds.length}).`);
   if (!steps.some((s) => s.action === 'pick' && s.target === 'map')) problems.push('Warning: no map pick step.');
   return problems;

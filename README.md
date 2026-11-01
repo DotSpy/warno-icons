@@ -15,7 +15,9 @@ Steps are strings `TEAM ACTION TARGET TIMER` e.g. `A ban map 30` (`TEAM` A|B, `A
 
 - **Maps:** global - a pick/ban removes the map for everyone.
 - **Side:** `A pick side 30` lets that team choose NATO or Warsaw Pact; the opponent gets the other.
-- **Divisions:** each team picks only from its own side's divisions. A division ban removes a division from the **opponent's** pool. A team can't pick the same division twice.
+- **Divisions:** if the preset has a `pick side` step, each team picks only from its own side's divisions; without one, the whole pool is open. A division ban removes a division from the **opponent's** pool. A team can't pick the same division twice.
+- **Division pick mode** (`"divisionPick"` in the preset JSON, or the editor select): `shared` (default) - both teams may pick the same division (blind-style); `exclusive` - one by one, a picked division is gone for the other team. Only matters when both teams can draw from the same pool (no side step). Note: picks are visible live; a truly hidden simultaneous blind reveal is not implemented.
+- Added icons: 4th Marine Division (`divisions/nato/us/4th-marines.png`) and 1a División de Tanques (`divisions/pact/cub/1-tank.png`), from the WARNO wiki (256x256).
 - Host controls: Start, Undo last, Reset (host can also act for either team).
 
 ## Results and history

@@ -22,6 +22,7 @@ export interface Config {
   teamSize: number;
   mapIds: string[];
   divisionIds: string[];
+  divisionPick?: 'shared' | 'exclusive';
   steps: Step[];
 }
 
@@ -86,11 +87,13 @@ export function isAvailable(state: DraftState, team: TeamId, action: Action, tar
   if (target === 'map') return !state.history.some((e) => e.target === 'map' && e.itemId === itemId);
   if (target === 'side') return state.sides[team] === null && state.sides[otherTeam(team)] !== itemId;
   const owner = action === 'pick' ? team : otherTeam(team);
-  if (state.sides[owner] === null || divisionSide.get(itemId) !== state.sides[owner]) return false;
+  const useSides = state.config.steps.some((s) => s.target === 'side');
+  if (useSides && (state.sides[owner] === null || divisionSide.get(itemId) !== state.sides[owner])) return false;
+  const exclusive = state.config.divisionPick === 'exclusive';
   return !state.history.some((e) => {
     if (e.target !== 'division' || e.itemId !== itemId) return false;
     if (e.action === 'ban') return e.team !== owner; // banned against owner
-    return e.team === owner; // already picked by owner
+    return exclusive || e.team === owner; // exclusive: taken for everyone; shared: only own pick
   });
 }
 
