@@ -3,4 +3,4 @@
 https://aoe2cm.net/preset/jBIIg
 ## sides
 
-sides\nato.png and sides\pact.png: 300x300 original, simple NATO/Pact side emblems (not the official in-game or NATO/Warsaw Pact logos, which are non-free).
+`sides\nato.png` (Flag of NATO) and `sides\pact.png` (Warsaw Pact logo): 300x300, rendered from Wikimedia Commons SVGs tagged Public domain (https://commons.wikimedia.org/wiki/File:Flag_of_NATO.svg, https://commons.wikimedia.org/wiki/File:Warsaw_Pact_Logo.svg; NATO file carries an insignia restriction).
