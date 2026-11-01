@@ -1,0 +1,37 @@
+{
+  "_comment": "Maps without an 'icon' are placeholders (rendered as a text tile). 'icon' is relative to the repository root. 'pools' lists map ids per game mode.",
+  "maps": [
+    { "id": "albion", "name": "Albion", "icon": "2v2/albion.png" },
+    { "id": "black-forest", "name": "Black Forest", "icon": "2v2/black-forest.png" },
+    { "id": "chemical", "name": "Chemical", "icon": "2v2/chemical.png" },
+    { "id": "death-row", "name": "Death Row", "icon": "2v2/death-row.png" },
+    { "id": "eiche", "name": "Eiche", "icon": "2v2/eiche.png" },
+    { "id": "hesse", "name": "Hesse", "icon": "2v2/hesse.png" },
+    { "id": "loop", "name": "Loop", "icon": "2v2/loop.png" },
+    { "id": "mountriver", "name": "Mount River", "icon": "2v2/mountriver.png" },
+    { "id": "ripple-2v2", "name": "Ripple", "icon": "2v2/ripple-2v2.png" },
+    { "id": "schondra", "name": "Schondra", "icon": "2v2/schondra.png" },
+    { "id": "tension-2v2", "name": "Tension", "icon": "2v2/tension-2v2.png" },
+    { "id": "tuefelsmoor-2v2", "name": "Teufelsmoor", "icon": "2v2/tuefelsmoor-2v2.png" },
+    { "id": "two-lakes", "name": "Two Lakes", "icon": "2v2/two-lakes.png" },
+    { "id": "two-ways-2v2", "name": "Two Ways", "icon": "2v2/two-ways-2v2.png" },
+    { "id": "urban-2v2", "name": "Urban", "icon": "2v2/urban-2v2.png" },
+    { "id": "vertigo", "name": "Vertigo", "icon": "2v2/vertigo.png" },
+    { "id": "taler", "name": "Taler", "icon": "3v3/taler.png" },
+    { "id": "placeholder-1", "name": "Map 1 (placeholder)" },
+    { "id": "placeholder-2", "name": "Map 2 (placeholder)" },
+    { "id": "placeholder-3", "name": "Map 3 (placeholder)" },
+    { "id": "placeholder-4", "name": "Map 4 (placeholder)" },
+    { "id": "placeholder-5", "name": "Map 5 (placeholder)" },
+    { "id": "placeholder-6", "name": "Map 6 (placeholder)" },
+    { "id": "placeholder-7", "name": "Map 7 (placeholder)" },
+    { "id": "placeholder-8", "name": "Map 8 (placeholder)" }
+  ],
+  "pools": {
+    "1v1": ["placeholder-1", "placeholder-2", "placeholder-3", "placeholder-4", "placeholder-5", "placeholder-6", "placeholder-7", "placeholder-8"],
+    "2v2": ["albion", "black-forest", "chemical", "death-row", "eiche", "hesse", "loop", "mountriver", "ripple-2v2", "schondra", "tension-2v2", "tuefelsmoor-2v2", "two-lakes", "two-ways-2v2", "urban-2v2", "vertigo"],
+    "3v3": ["taler", "placeholder-1", "placeholder-2", "placeholder-3", "placeholder-4", "placeholder-5", "placeholder-6"],
+    "4v4": ["placeholder-1", "placeholder-2", "placeholder-3", "placeholder-4", "placeholder-5", "placeholder-6", "placeholder-7", "placeholder-8"],
+    "5v5": ["placeholder-1", "placeholder-2", "placeholder-3", "placeholder-4", "placeholder-5", "placeholder-6", "placeholder-7", "placeholder-8"]
+  }
+}
